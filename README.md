@@ -8,7 +8,7 @@
 - apache
 - mysql
 
-## local environment
+## 開発環境
 
 - wsl 2
 - Docker Desktop for Mac and Windows
@@ -19,6 +19,14 @@
 ```sh
 $ docker-compose exec php bash
 $ composer create-project --prefer-dist laravel/laravel app
+```
+
+## usage
+
+```sh
+# remove self
+## run in php container
+composer prune
 ```
 
 ## 動作確認

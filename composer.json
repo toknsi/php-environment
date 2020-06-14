@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "prune":[
+            "rm composer.json",
+            "rm .gitignore",
+            "rm -rf .git"
+        ]
+    }
+}
