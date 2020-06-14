@@ -25,7 +25,8 @@ $ composer create-project --prefer-dist laravel/laravel app
 
 ```sh
 # remove self
-## run in php container
+docker-compose exec php composer prune
+## or run in php container
 composer prune
 ```
 
