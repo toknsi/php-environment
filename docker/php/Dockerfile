@@ -14,4 +14,7 @@ RUN apt-get update \
 RUN pecl install xdebug \
   && docker-php-ext-enable xdebug
 
+RUN apt-get -y install libzip-dev
+RUN docker-php-ext-install zip
+
 WORKDIR /var/www/html
