@@ -14,20 +14,17 @@
 - Docker Desktop for Mac and Windows
 - vscode Remote-Containers (Docker)
 
-## create laravel project
-
-```sh
-$ docker-compose exec php bash
-$ composer create-project --prefer-dist laravel/laravel app
-```
-
 ## usage
 
 ```sh
+# create laravel project
+$ docker-compose exec php bash
+$ composer create-project --prefer-dist laravel/laravel app
+
 # remove self
-docker-compose exec php composer prune
+$ docker-compose exec php composer prune
 ## or run in php container
-composer prune
+$ composer prune
 ```
 
 ## 動作確認
@@ -42,7 +39,12 @@ xdebug.remote_hostに罠がありまして、`php`を指定します。
 xdebug.remote_host = "php"
 ```
 
+## e2e test
+
+- standalone-chrome-debug https://github.com/SeleniumHQ/docker-selenium
+- vnc vnc://localhost:5900
+
 ## todo
 
-- docker e2e test
-- nginx
+- [x] docker e2e test
+- [ ] nginx
